@@ -16,9 +16,11 @@ extension ConnectManager {
             key: randomKey
         )
         
+        
         let dAppInfo = NeopinConnect.Session.DAppInfo(
             peerId: UUID().uuidString,
-            peerMeta: self.clientMetaData
+            peerMeta: self.clientMetaData,
+            chainId: 1001
         )
         
         if self.client == nil {

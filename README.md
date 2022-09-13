@@ -6,6 +6,30 @@ NEOPIN Connect는 브리지 서버를 사용하여 페이로드를 릴레이하�
 
 현재는 Klaytn 계열의 코인, 토큰만 지원하며, 향후 Ethereum, BSC등 다양한 체인으로 확장할 예정입니다.
 
+```mermaid
+sequenceDiagram
+  participant dapp as Dapp
+  participant server as BridgeServer
+  participant wallet as Wallet
+  
+  autonumber
+  
+  dapp -->> server: Connect BridgeServer
+  dapp ->> server: Post Session Request (peerId, peerMeta)
+  dapp ->> wallet: Display QRCode or DeepLink (nptwc:...)
+  wallet -->> server: Connect BridgeServer
+  server ->> wallet: Get Session Request (peerId, peerMeta)
+  wallet ->> server: Post Session Status (accounts, chainId)
+  server ->> dapp: Get Session Status (accounts, chainId)
+  dapp ->> server: Encrypt JSON-RPC Request
+  server ->> wallet: Encrypt JSON-RPC Request
+  wallet -->> wallet: Decrypt JSON-RPC Request
+  wallet ->> server: Encrypt JSON-RPC Response
+  server ->> dapp: Encrypt JSON-RPC Response
+  dapp -->> dapp: Decrypt JSON-RPC Response
+```
+
+
 # Documentation
 To get started with [NeopinConnect](https://docs.neopin.io/enjoy-with-neopin/neopin-connect), please refer to the NeopinConnect documentation. This describes key concepts on NeopinConnect, from what they are for, their structure and common use cases.
 
@@ -16,7 +40,7 @@ To get started with [NeopinConnect](https://docs.neopin.io/enjoy-with-neopin/neo
     
 # Dependencies
 
-- [WalletConnect (1.0.1)](https://github.com/WalletConnect/WalletConnectSwift)
+- [WalletConnect](https://github.com/WalletConnect/WalletConnectSwift)
 - [web3swift](https://github.com/skywinder/web3swift)
 - [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift)
     

@@ -33,12 +33,6 @@ And then run:
 pod install
 ```
 
-
-# Author
-toypresent81, toypresent@neowiz.com
-
-SUNG9, sung9@neowiz.com
-
 # License
 
 NeopinConnect is available under the MIT license. See the LICENSE file for more info.

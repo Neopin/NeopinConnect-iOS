@@ -37,7 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05A9D8C37B80AC3A3C81668D /* NeopinConnect.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NeopinConnect.podspec; path = ../NeopinConnect.podspec; sourceTree = "<group>"; };
+		05A9D8C37B80AC3A3C81668D /* NeopinConnect.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NeopinConnect.podspec; path = ../NeopinConnect.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		461F79F528D049F300F767FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		461F79F728D049F300F767FF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		461F79F828D049F300F767FF /* Decimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };

@@ -7,40 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		461F7A1C28D049F300F767FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79F528D049F300F767FF /* AppDelegate.swift */; };
+		461F7A1D28D049F300F767FF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79F728D049F300F767FF /* UIView.swift */; };
+		461F7A1E28D049F300F767FF /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79F828D049F300F767FF /* Decimal.swift */; };
+		461F7A1F28D049F300F767FF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79F928D049F300F767FF /* Notification.swift */; };
+		461F7A2028D049F300F767FF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79FA28D049F300F767FF /* String.swift */; };
+		461F7A2128D049F300F767FF /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79FB28D049F300F767FF /* UIButton.swift */; };
+		461F7A2228D049F300F767FF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79FC28D049F300F767FF /* UIImageView.swift */; };
+		461F7A2328D049F300F767FF /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79FD28D049F300F767FF /* UITextView.swift */; };
+		461F7A2428D049F300F767FF /* QRConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0028D049F300F767FF /* QRConnectViewController.swift */; };
+		461F7A2528D049F300F767FF /* QRConnectViewController+NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0128D049F300F767FF /* QRConnectViewController+NotificationCenter.swift */; };
+		461F7A2628D049F300F767FF /* MainViewController+NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0328D049F300F767FF /* MainViewController+NotificationCenter.swift */; };
+		461F7A2728D049F300F767FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0428D049F300F767FF /* MainViewController.swift */; };
+		461F7A2828D049F300F767FF /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0628D049F300F767FF /* ConnectButtonView.swift */; };
+		461F7A2928D049F300F767FF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0828D049F300F767FF /* BaseViewController.swift */; };
+		461F7A2A28D049F300F767FF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0928D049F300F767FF /* BaseView.swift */; };
+		461F7A2B28D049F300F767FF /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0A28D049F300F767FF /* BaseButton.swift */; };
+		461F7A2C28D049F300F767FF /* ABIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0D28D049F300F767FF /* ABIHelper.swift */; };
+		461F7A2D28D049F300F767FF /* QRHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0F28D049F300F767FF /* QRHelper.swift */; };
+		461F7A2E28D049F300F767FF /* ConnectManager+ClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A1128D049F300F767FF /* ConnectManager+ClientDelegate.swift */; };
+		461F7A2F28D049F300F767FF /* ConnectManager+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A1228D049F300F767FF /* ConnectManager+Session.swift */; };
+		461F7A3028D049F300F767FF /* ConnectManager+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A1328D049F300F767FF /* ConnectManager+Log.swift */; };
+		461F7A3128D049F300F767FF /* ConnectManager+Send.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A1428D049F300F767FF /* ConnectManager+Send.swift */; };
+		461F7A3228D049F300F767FF /* ConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A1528D049F300F767FF /* ConnectManager.swift */; };
+		461F7A3328D049F300F767FF /* ConnectManager+Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A1628D049F300F767FF /* ConnectManager+Connect.swift */; };
+		461F7A3428D049F300F767FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461F7A1828D049F300F767FF /* Assets.xcassets */; };
+		461F7A3528D049F300F767FF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461F7A1928D049F300F767FF /* Launch Screen.storyboard */; };
 		61F5250D7D52FB89A68D402C /* Pods_NeopinConnect_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15311AF1F0A3335E0E2CC0 /* Pods_NeopinConnect_Example.framework */; };
-		7D9A46AC2C064A8D91645BC2 /* Pods_NeopinConnect_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBC476C84337BBBBFFBAE63 /* Pods_NeopinConnect_Tests.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = NeopinConnect;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		05A9D8C37B80AC3A3C81668D /* NeopinConnect.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NeopinConnect.podspec; path = ../NeopinConnect.podspec; sourceTree = "<group>"; };
+		05A9D8C37B80AC3A3C81668D /* NeopinConnect.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NeopinConnect.podspec; path = ../NeopinConnect.podspec; sourceTree = "<group>"; };
+		461F79F528D049F300F767FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		461F79F728D049F300F767FF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		461F79F828D049F300F767FF /* Decimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
+		461F79F928D049F300F767FF /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		461F79FA28D049F300F767FF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		461F79FB28D049F300F767FF /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		461F79FC28D049F300F767FF /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		461F79FD28D049F300F767FF /* UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		461F7A0028D049F300F767FF /* QRConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRConnectViewController.swift; sourceTree = "<group>"; };
+		461F7A0128D049F300F767FF /* QRConnectViewController+NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QRConnectViewController+NotificationCenter.swift"; sourceTree = "<group>"; };
+		461F7A0328D049F300F767FF /* MainViewController+NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+NotificationCenter.swift"; sourceTree = "<group>"; };
+		461F7A0428D049F300F767FF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		461F7A0628D049F300F767FF /* ConnectButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectButtonView.swift; sourceTree = "<group>"; };
+		461F7A0828D049F300F767FF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		461F7A0928D049F300F767FF /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		461F7A0A28D049F300F767FF /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		461F7A0D28D049F300F767FF /* ABIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABIHelper.swift; sourceTree = "<group>"; };
+		461F7A0F28D049F300F767FF /* QRHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRHelper.swift; sourceTree = "<group>"; };
+		461F7A1128D049F300F767FF /* ConnectManager+ClientDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConnectManager+ClientDelegate.swift"; sourceTree = "<group>"; };
+		461F7A1228D049F300F767FF /* ConnectManager+Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConnectManager+Session.swift"; sourceTree = "<group>"; };
+		461F7A1328D049F300F767FF /* ConnectManager+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConnectManager+Log.swift"; sourceTree = "<group>"; };
+		461F7A1428D049F300F767FF /* ConnectManager+Send.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConnectManager+Send.swift"; sourceTree = "<group>"; };
+		461F7A1528D049F300F767FF /* ConnectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectManager.swift; sourceTree = "<group>"; };
+		461F7A1628D049F300F767FF /* ConnectManager+Connect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConnectManager+Connect.swift"; sourceTree = "<group>"; };
+		461F7A1828D049F300F767FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		461F7A1928D049F300F767FF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		461F7A1B28D049F300F767FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NeopinConnect_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeopinConnect_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* NeopinConnect_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeopinConnect_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		87406C178D0B003C73D4549A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9EE054A8E0500F71B35E13D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		87406C178D0B003C73D4549A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9EE054A8E0500F71B35E13D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9FFCEF2EDB10488EC298BB99 /* Pods-NeopinConnect_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeopinConnect_Example.release.xcconfig"; path = "Target Support Files/Pods-NeopinConnect_Example/Pods-NeopinConnect_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ADF95C45C0D895D615F54815 /* Pods-NeopinConnect_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeopinConnect_Tests.release.xcconfig"; path = "Target Support Files/Pods-NeopinConnect_Tests/Pods-NeopinConnect_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BAD24307D13C5ED40F0E0405 /* Pods-NeopinConnect_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeopinConnect_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NeopinConnect_Tests/Pods-NeopinConnect_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,23 +85,150 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D9A46AC2C064A8D91645BC2 /* Pods_NeopinConnect_Tests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		461F79F328D049F300F767FF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				461F79F428D049F300F767FF /* App */,
+				461F79F628D049F300F767FF /* Extensions */,
+				461F79FE28D049F300F767FF /* Pages */,
+				461F7A0B28D049F300F767FF /* Helper */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		461F79F428D049F300F767FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				461F79F528D049F300F767FF /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		461F79F628D049F300F767FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				461F79F728D049F300F767FF /* UIView.swift */,
+				461F79F828D049F300F767FF /* Decimal.swift */,
+				461F79F928D049F300F767FF /* Notification.swift */,
+				461F79FA28D049F300F767FF /* String.swift */,
+				461F79FB28D049F300F767FF /* UIButton.swift */,
+				461F79FC28D049F300F767FF /* UIImageView.swift */,
+				461F79FD28D049F300F767FF /* UITextView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		461F79FE28D049F300F767FF /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				461F79FF28D049F300F767FF /* QRConnect */,
+				461F7A0228D049F300F767FF /* Main */,
+				461F7A0728D049F300F767FF /* Base */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		461F79FF28D049F300F767FF /* QRConnect */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A0028D049F300F767FF /* QRConnectViewController.swift */,
+				461F7A0128D049F300F767FF /* QRConnectViewController+NotificationCenter.swift */,
+			);
+			path = QRConnect;
+			sourceTree = "<group>";
+		};
+		461F7A0228D049F300F767FF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A0328D049F300F767FF /* MainViewController+NotificationCenter.swift */,
+				461F7A0428D049F300F767FF /* MainViewController.swift */,
+				461F7A0528D049F300F767FF /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		461F7A0528D049F300F767FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A0628D049F300F767FF /* ConnectButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		461F7A0728D049F300F767FF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A0828D049F300F767FF /* BaseViewController.swift */,
+				461F7A0928D049F300F767FF /* BaseView.swift */,
+				461F7A0A28D049F300F767FF /* BaseButton.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		461F7A0B28D049F300F767FF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A0C28D049F300F767FF /* ABIHelper */,
+				461F7A0E28D049F300F767FF /* QRHelper */,
+				461F7A1028D049F300F767FF /* ConnectManager */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		461F7A0C28D049F300F767FF /* ABIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A0D28D049F300F767FF /* ABIHelper.swift */,
+			);
+			path = ABIHelper;
+			sourceTree = "<group>";
+		};
+		461F7A0E28D049F300F767FF /* QRHelper */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A0F28D049F300F767FF /* QRHelper.swift */,
+			);
+			path = QRHelper;
+			sourceTree = "<group>";
+		};
+		461F7A1028D049F300F767FF /* ConnectManager */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A1128D049F300F767FF /* ConnectManager+ClientDelegate.swift */,
+				461F7A1228D049F300F767FF /* ConnectManager+Session.swift */,
+				461F7A1328D049F300F767FF /* ConnectManager+Log.swift */,
+				461F7A1428D049F300F767FF /* ConnectManager+Send.swift */,
+				461F7A1528D049F300F767FF /* ConnectManager.swift */,
+				461F7A1628D049F300F767FF /* ConnectManager+Connect.swift */,
+			);
+			path = ConnectManager;
+			sourceTree = "<group>";
+		};
+		461F7A1728D049F300F767FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A1828D049F300F767FF /* Assets.xcassets */,
+				461F7A1928D049F300F767FF /* Launch Screen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		461F7A1A28D049F300F767FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				461F7A1B28D049F300F767FF /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for NeopinConnect */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				E8CDC7A4365387F43FBE7D15 /* Pods */,
 				A27A4BBC003085C2315DD407 /* Frameworks */,
@@ -85,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* NeopinConnect_Example.app */,
-				607FACE51AFB9204008FA782 /* NeopinConnect_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,40 +246,12 @@
 		607FACD21AFB9204008FA782 /* Example for NeopinConnect */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				461F7A1728D049F300F767FF /* Resources */,
+				461F79F328D049F300F767FF /* Sources */,
+				461F7A1A28D049F300F767FF /* Supporting Files */,
 			);
 			name = "Example for NeopinConnect";
 			path = NeopinConnect;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -156,7 +281,6 @@
 				BAD24307D13C5ED40F0E0405 /* Pods-NeopinConnect_Tests.debug.xcconfig */,
 				ADF95C45C0D895D615F54815 /* Pods-NeopinConnect_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -182,25 +306,6 @@
 			productReference = 607FACD01AFB9204008FA782 /* NeopinConnect_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* NeopinConnect_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NeopinConnect_Tests" */;
-			buildPhases = (
-				D7AD2F3F10C1D510B41520EF /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = NeopinConnect_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* NeopinConnect_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,11 +320,6 @@
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
 					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
-					};
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NeopinConnect" */;
@@ -227,6 +327,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -236,7 +337,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* NeopinConnect_Example */,
-				607FACE41AFB9204008FA782 /* NeopinConnect_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,16 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				461F7A3528D049F300F767FF /* Launch Screen.storyboard in Resources */,
+				461F7A3428D049F300F767FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,37 +383,29 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NeopinConnect_Example/Pods-NeopinConnect_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/NeopinConnect/NeopinConnect.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.c/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NeopinConnect.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeopinConnect_Example/Pods-NeopinConnect_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7AD2F3F10C1D510B41520EF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NeopinConnect_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -331,47 +415,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				461F7A2528D049F300F767FF /* QRConnectViewController+NotificationCenter.swift in Sources */,
+				461F7A3328D049F300F767FF /* ConnectManager+Connect.swift in Sources */,
+				461F7A1F28D049F300F767FF /* Notification.swift in Sources */,
+				461F7A3128D049F300F767FF /* ConnectManager+Send.swift in Sources */,
+				461F7A2B28D049F300F767FF /* BaseButton.swift in Sources */,
+				461F7A2328D049F300F767FF /* UITextView.swift in Sources */,
+				461F7A2728D049F300F767FF /* MainViewController.swift in Sources */,
+				461F7A2828D049F300F767FF /* ConnectButtonView.swift in Sources */,
+				461F7A2D28D049F300F767FF /* QRHelper.swift in Sources */,
+				461F7A2928D049F300F767FF /* BaseViewController.swift in Sources */,
+				461F7A2428D049F300F767FF /* QRConnectViewController.swift in Sources */,
+				461F7A1E28D049F300F767FF /* Decimal.swift in Sources */,
+				461F7A2C28D049F300F767FF /* ABIHelper.swift in Sources */,
+				461F7A3228D049F300F767FF /* ConnectManager.swift in Sources */,
+				461F7A2F28D049F300F767FF /* ConnectManager+Session.swift in Sources */,
+				461F7A2228D049F300F767FF /* UIImageView.swift in Sources */,
+				461F7A2028D049F300F767FF /* String.swift in Sources */,
+				461F7A1D28D049F300F767FF /* UIView.swift in Sources */,
+				461F7A1C28D049F300F767FF /* AppDelegate.swift in Sources */,
+				461F7A2A28D049F300F767FF /* BaseView.swift in Sources */,
+				461F7A2128D049F300F767FF /* UIButton.swift in Sources */,
+				461F7A3028D049F300F767FF /* ConnectManager+Log.swift in Sources */,
+				461F7A2E28D049F300F767FF /* ConnectManager+ClientDelegate.swift in Sources */,
+				461F7A2628D049F300F767FF /* MainViewController+NotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* NeopinConnect_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -419,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,13 +549,15 @@
 			baseConfigurationReference = F1C1758027112702A7E8D2E7 /* Pods-NeopinConnect_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NeopinConnect/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "NeopinConnect/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neopin.connect.sample.dapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -493,53 +566,15 @@
 			baseConfigurationReference = 9FFCEF2EDB10488EC298BB99 /* Pods-NeopinConnect_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NeopinConnect/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "NeopinConnect/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neopin.connect.sample.dapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAD24307D13C5ED40F0E0405 /* Pods-NeopinConnect_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeopinConnect_Example.app/NeopinConnect_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADF95C45C0D895D615F54815 /* Pods-NeopinConnect_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeopinConnect_Example.app/NeopinConnect_Example";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -560,15 +595,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NeopinConnect_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

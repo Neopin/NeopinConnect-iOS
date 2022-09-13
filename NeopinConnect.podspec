@@ -21,22 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/vkcldhkd/NeopinConnect'
+  s.homepage         = 'https://github.com/Neopin/NeopinConnect-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vkcldhkd' => 'sung9@neowiz.com' }
-  s.source           = { :git => 'https://github.com/vkcldhkd/NeopinConnect.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'sung9' => 'sung9@neowiz.com' }
+  s.source           = { :git => 'https://github.com/Neopin/NeopinConnect-iOS.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'NeopinConnect/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'NeopinConnect' => ['NeopinConnect/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5.0'
+  s.requires_arc = true
+  s.dependency "CryptoSwift"
 end

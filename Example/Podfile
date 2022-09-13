@@ -3,11 +3,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'NeopinConnect_Example' do
-  pod 'NeopinConnect', :path => '../'
-
-  target 'NeopinConnect_Tests' do
-    inherit! :search_paths
-
-    
-  end
+	pod 'NeopinConnect', :path => '../'
+	pod 'SnapKit'
+	pod 'web3swift'
 end

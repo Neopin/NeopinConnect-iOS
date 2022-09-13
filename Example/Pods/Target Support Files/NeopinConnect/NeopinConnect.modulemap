@@ -1,0 +1,6 @@
+framework module NeopinConnect {
+  umbrella header "NeopinConnect-umbrella.h"
+
+  export *
+  module * { export * }
+}

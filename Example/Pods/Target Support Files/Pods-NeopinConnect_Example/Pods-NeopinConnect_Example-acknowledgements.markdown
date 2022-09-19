@@ -42,7 +42,7 @@ Permission is granted to anyone to use this software for any purpose,including c
 
 ## NeopinConnect
 
-Copyright (c) 2022 vkcldhkd <sung9@neowiz.com>
+Copyright (c) 2022 sung9 <sung9@neowiz.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

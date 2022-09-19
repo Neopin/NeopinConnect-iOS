@@ -2,7 +2,7 @@
 //  ABIHelper.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/17.
+//  Created by Neopin on 2022/08/17.
 //
 import web3swift
 

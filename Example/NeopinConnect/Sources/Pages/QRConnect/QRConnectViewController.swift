@@ -2,7 +2,7 @@
 //  QRConnectViewController.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/08.
+//  Created by Neopin on 2022/08/08.
 //
 
 import UIKit
@@ -131,7 +131,7 @@ private extension QRConnectViewController {
             
             let alertController = UIAlertController(
                 title: nil,
-                message: "복사되었습니다.",
+                message: "Copied",
                 preferredStyle: .alert
             )
             

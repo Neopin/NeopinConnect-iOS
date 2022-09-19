@@ -2,7 +2,7 @@
 //  BaseButton.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/05.
+//  Created by Neopin on 2022/08/05.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/02.
+//  Created by Neopin on 2022/08/02.
 //
 
 import UIKit

@@ -16,7 +16,7 @@ xcuserdata/
 *.moved-aside
 DerivedData
 *.hmap
-*.ipa
+
 
 # Bundler
 .bundle

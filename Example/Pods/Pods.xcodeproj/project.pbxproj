@@ -385,7 +385,7 @@
 		DA45C8F4149AB8D1B6758BB818317A3A /* Web3+ERC20.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6E34D0F50361BEE01C4F7ADD7EE89 /* Web3+ERC20.swift */; };
 		DA5F6B91BDDA4FE3C6104DCEC0866921 /* basic-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EE5DD647442FF60B701AAD767B0BD7 /* basic-config.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DA6EDABF74C3C6E9F9997B698195D6A2 /* Prime Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68179A2840C7006365A45B65B3342CDA /* Prime Test.swift */; };
-		DC12EACC62C6C124F587C3F60251A3E7 /* web3swift-Browser in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6A0FDF284A2C935F5EA9F6111B0B /* web3swift-Browser */; };
+		DC12EACC62C6C124F587C3F60251A3E7 /* Browser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12DC6A0FDF284A2C935F5EA9F6111B0B /* Browser.bundle */; };
 		DC5970676E09EBE1DF4D3EE695C8B284 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8551EC1DB9244FFB5C7EDCC3A67E754 /* Utils+Foundation.swift */; };
 		DCFC2730C2AB6CA444EFE289DC32F045 /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DD4748D8EE57441C68ED27FD9EF110 /* NSURLSession+AnyPromise.m */; };
 		DDA8E54FFAA6DFF7E15F15A52AB7C662 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34916EBC7E4767CE963185BD2A808 /* Hashable.swift */; };
@@ -602,7 +602,7 @@
 		11F72ACF4D7FBF4395C2A3B0667D328F /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
 		124C8467D9F4B91A149B1BACD5B83FA2 /* Promise+Web3+Eth+GetTransactionReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Web3+Eth+GetTransactionReceipt.swift"; path = "Sources/web3swift/Promises/Promise+Web3+Eth+GetTransactionReceipt.swift"; sourceTree = "<group>"; };
 		12D484D6A789D165B53D50171D6FDD29 /* BigInt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BigInt.release.xcconfig; sourceTree = "<group>"; };
-		12DC6A0FDF284A2C935F5EA9F6111B0B /* web3swift-Browser */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "web3swift-Browser"; path = Browser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DC6A0FDF284A2C935F5EA9F6111B0B /* Browser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Browser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E59A1EC18226149C1DEA17C1B818D4 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
 		131F87BCDA144F6ACBD431F80DBA1B8F /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
 		1386E8EF6DD634EAB621E8E92B41DF55 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
@@ -630,7 +630,7 @@
 		1E80BD92BF349DA91D1475A9B784EF41 /* ABITypeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ABITypeParser.swift; path = Sources/web3swift/EthereumABI/ABITypeParser.swift; sourceTree = "<group>"; };
 		1EF909AFE6676EF56CEC49C52DCC8E0F /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
 		1F24B0E09720F50D00A20037921BA1C1 /* scalar_8x32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar_8x32.h; path = secp256k1/scalar_8x32.h; sourceTree = "<group>"; };
-		1F8BC944C13104DAA22CFC7A3FAFE511 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1F8BC944C13104DAA22CFC7A3FAFE511 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2093CC565B3240E12946F4550AB2359A /* secp256k1.c-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "secp256k1.c-dummy.m"; sourceTree = "<group>"; };
 		2100185F07267259923BF93583FBB89F /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
 		21C0498AEFCD4E7333D40978F2D41B9A /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
@@ -642,7 +642,7 @@
 		2547565F4A3B38D53D4227553CDA1108 /* UpdateSessionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UpdateSessionHandler.swift; sourceTree = "<group>"; };
 		25D5C8FCCB5FF42100BC69F97DB812EA /* Cryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptor.swift; path = Sources/CryptoSwift/Cryptor.swift; sourceTree = "<group>"; };
 		262CB46AF5A43CA73971725F87F30ACD /* Web3+BrowserFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+BrowserFunctions.swift"; path = "Sources/web3swift/HookedFunctions/Web3+BrowserFunctions.swift"; sourceTree = "<group>"; };
-		26BCC8177F481227CB8DD367B60FA5D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		26BCC8177F481227CB8DD367B60FA5D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		283AD78CD402452026D513D7B024449B /* BigInt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BigInt.debug.xcconfig; sourceTree = "<group>"; };
 		289E3AA20282D1DDB9E6F98C7C325ED6 /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
 		29354B287FADED07F92410E5C431C1FE /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
@@ -748,14 +748,14 @@
 		5F6A4E1B427BF9D80301034DC2253D1D /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
 		5F7E15ABA1F6DD7D56C7D28A1895F1C4 /* scratch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scratch.h; path = secp256k1/scratch.h; sourceTree = "<group>"; };
 		60340D5D7D11401714E54E7D8EC66385 /* KeystoreParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeystoreParams.swift; path = Sources/web3swift/KeystoreManager/KeystoreParams.swift; sourceTree = "<group>"; };
-		607ADFF9E29BDE980C4F55EDEA271DAB /* browser.js */ = {isa = PBXFileReference; includeInIndex = 1; name = browser.js; path = Sources/web3swift/Browser/browser.js; sourceTree = "<group>"; };
+		607ADFF9E29BDE980C4F55EDEA271DAB /* browser.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = browser.js; path = Sources/web3swift/Browser/browser.js; sourceTree = "<group>"; };
 		62730C002F75DB5FE0534E2203D43D39 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Sources/ConstraintMaker.swift; sourceTree = "<group>"; };
 		62B900B90A57C3FAF032E4FE851B5923 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
-		638CC9B149C524B07D2E8AB25AE299A6 /* NeopinConnect.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NeopinConnect.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		645E8FAC1015D92EE20951F88C7A9F2A /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = secp256k1.c; path = secp256k1/secp256k1.c; sourceTree = "<group>"; };
+		638CC9B149C524B07D2E8AB25AE299A6 /* NeopinConnect.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NeopinConnect.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		645E8FAC1015D92EE20951F88C7A9F2A /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = secp256k1.c; path = secp256k1/secp256k1.c; sourceTree = "<group>"; };
 		651055EAEC3318F4897639C5D24CD3B3 /* web3swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = web3swift.release.xcconfig; sourceTree = "<group>"; };
 		658D3727D313757587F3C27866DC9B3D /* ResourceBundle-Browser-web3swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Browser-web3swift-Info.plist"; sourceTree = "<group>"; };
-		65E653460C73E0CF4161ADEC3B705709 /* browser.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = browser.min.js; path = Sources/web3swift/Browser/browser.min.js; sourceTree = "<group>"; };
+		65E653460C73E0CF4161ADEC3B705709 /* browser.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = browser.min.js; path = Sources/web3swift/Browser/browser.min.js; sourceTree = "<group>"; };
 		6621FDD272591BFBD500FE6C90EE2185 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Sources/ConstraintDescription.swift; sourceTree = "<group>"; };
 		67DE942FB3DAA92CE782989AF2C19632 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		67FC18E149FB77FD80F8A5E398D05A88 /* Web3+ERC1155.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+ERC1155.swift"; path = "Sources/web3swift/Tokens/ERC1155/Web3+ERC1155.swift"; sourceTree = "<group>"; };
@@ -857,7 +857,7 @@
 		9C2007C26D5289A7ECD9FC97F2ADEB72 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/web3swift/Convenience/Array+Extension.swift"; sourceTree = "<group>"; };
 		9CDA46CB640A96F52CA842681572F2C4 /* Shifts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shifts.swift; path = Sources/CryptoSwift/CS_BigInt/Shifts.swift; sourceTree = "<group>"; };
 		9D821EB255A8B16D0D7AFA90B1C04C57 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EDC54CD853805A5FB49D537240404E3 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Sources/ConstraintPriority.swift; sourceTree = "<group>"; };
 		9F89AB3E1AED75DCAAE7125220A52D46 /* EIP67Code.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EIP67Code.swift; path = Sources/web3swift/Utils/EIP/EIP67Code.swift; sourceTree = "<group>"; };
 		A1102B057466290CAB66B5CDDFF42B1D /* Scrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scrypt.swift; path = Sources/CryptoSwift/Scrypt.swift; sourceTree = "<group>"; };
@@ -972,7 +972,7 @@
 		D1F8B069FD980A1E0EDE19DF4AAD790F /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Sources/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		D1FFA3CFB0A746C82F48BED70624DB5E /* Multiplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multiplication.swift; path = Sources/CryptoSwift/CS_BigInt/Multiplication.swift; sourceTree = "<group>"; };
 		D295F7C360E3E44CB2ADEA924AB9482A /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
-		D3076480D9A3D991735B66443BDC5FD9 /* wk.bridge.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = wk.bridge.min.js; path = Sources/web3swift/Browser/wk.bridge.min.js; sourceTree = "<group>"; };
+		D3076480D9A3D991735B66443BDC5FD9 /* wk.bridge.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = wk.bridge.min.js; path = Sources/web3swift/Browser/wk.bridge.min.js; sourceTree = "<group>"; };
 		D369E71890C34F875D028548B18853F8 /* field_5x52_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_impl.h; path = secp256k1/field_5x52_impl.h; sourceTree = "<group>"; };
 		D46ABDC6CB102499334467A4B27F5CB4 /* Web3+ERC1643.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+ERC1643.swift"; path = "Sources/web3swift/Tokens/ERC1643/Web3+ERC1643.swift"; sourceTree = "<group>"; };
 		D4C778FE1C14F769AB976DB369C5C69D /* Promise+Web3+Eth+SendTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Web3+Eth+SendTransaction.swift"; path = "Sources/web3swift/Promises/Promise+Web3+Eth+SendTransaction.swift"; sourceTree = "<group>"; };
@@ -1309,7 +1309,6 @@
 				F780A8D2B766C08C10AC9C78FFE9F543 /* Resources */,
 				E0D8AE29DFA843C63BEC6CAC14A7D7FC /* Support Files */,
 			);
-			name = web3swift;
 			path = web3swift;
 			sourceTree = "<group>";
 		};
@@ -1365,7 +1364,6 @@
 				AA334CB2D46D99BB9B3DDBA13F871897 /* Support Files */,
 				80F2A00FDDD75B0FB6ACCA2E7344355C /* UIKit */,
 			);
-			name = PromiseKit;
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
@@ -1476,7 +1474,6 @@
 				5F6A4E1B427BF9D80301034DC2253D1D /* WSEngine.swift */,
 				D8FBDCBEB6B0A70B4891781701FD295A /* Support Files */,
 			);
-			name = Starscream;
 			path = Starscream;
 			sourceTree = "<group>";
 		};
@@ -1600,7 +1597,6 @@
 				D295F7C360E3E44CB2ADEA924AB9482A /* ZeroPadding.swift */,
 				EB064DAE8D774420574A93E85CB6E1B3 /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -1631,7 +1627,6 @@
 				D5F40F1EB1CEBCB21AB9048FB2611612 /* Words and Bits.swift */,
 				4BFD0919240DF309DDC64634930B7E0A /* Support Files */,
 			);
-			name = BigInt;
 			path = BigInt;
 			sourceTree = "<group>";
 		};
@@ -1657,7 +1652,7 @@
 				979486118B3E90C08386079D57962701 /* SnapKit */,
 				891B2270823847ED23F2ECFC28F935EC /* Starscream */,
 				8A2449DF78D58AD33A7C7504BB3F38A0 /* web3swift */,
-				12DC6A0FDF284A2C935F5EA9F6111B0B /* web3swift-Browser */,
+				12DC6A0FDF284A2C935F5EA9F6111B0B /* Browser.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1712,7 +1707,6 @@
 				8F6B4AE946085743F78451BC19602121 /* util.h */,
 				7318B15D53CBC0D14FF88CDF22D9E1E0 /* Support Files */,
 			);
-			name = secp256k1.c;
 			path = secp256k1.c;
 			sourceTree = "<group>";
 		};
@@ -1875,7 +1869,6 @@
 				774A5B62F59AA8A0E4C707C34AB25C93 /* UILayoutSupport+Extensions.swift */,
 				2902F98080922DB6E1A7F48D3436EB65 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -2183,7 +2176,7 @@
 			);
 			name = "web3swift-Browser";
 			productName = Browser;
-			productReference = 12DC6A0FDF284A2C935F5EA9F6111B0B /* web3swift-Browser */;
+			productReference = 12DC6A0FDF284A2C935F5EA9F6111B0B /* Browser.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */ = {
@@ -2254,6 +2247,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8CDD759A6130CA265C6D157F4407C39B = {
+						DevelopmentTeam = K47L5ZLMT8;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2353,7 +2351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC12EACC62C6C124F587C3F60251A3E7 /* web3swift-Browser in Resources */,
+				DC12EACC62C6C124F587C3F60251A3E7 /* Browser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2901,6 +2899,7 @@
 			baseConfigurationReference = 3B55EF70C0879AA1DD9421B05FF7BBE1 /* web3swift.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/web3swift";
+				DEVELOPMENT_TEAM = K47L5ZLMT8;
 				IBSC_MODULE = web3swift;
 				INFOPLIST_FILE = "Target Support Files/web3swift/ResourceBundle-Browser-web3swift-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3120,8 +3119,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -3604,6 +3602,7 @@
 			baseConfigurationReference = 651055EAEC3318F4897639C5D24CD3B3 /* web3swift.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/web3swift";
+				DEVELOPMENT_TEAM = K47L5ZLMT8;
 				IBSC_MODULE = web3swift;
 				INFOPLIST_FILE = "Target Support Files/web3swift/ResourceBundle-Browser-web3swift-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

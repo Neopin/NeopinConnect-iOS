@@ -158,10 +158,10 @@ fileprivate enum Stub {
             gas: "0x76c0",
             gasPrice: "0x",
             value: "0x",
-            nonce: nil, //Neopin Wallet에서 최신 nonce로 업데이트 합니다.
+            nonce: nil, // If sent as nil, Update to the latest nonce from the NEOPIN Wallet.
             type: nil,
             accessList: nil,
-            chainId: nil,
+            chainId: nil, 
             maxPriorityFeePerGas: nil,
             maxFeePerGas: nil
         )

@@ -2,7 +2,7 @@
 //  ABIHelper.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/17.
+//  Created by Neopin on 2022/08/17.
 //
 import web3swift
 
@@ -44,6 +44,19 @@ private extension ABIHelper {
 
 // MARK: - Function
 extension ABIHelper {
+    static func increaseAllowanceFunction() -> ABI.Element.Function {
+        return ABI.Element.Function(
+            name: "increaseAllowance",
+            inputs: [
+                .init(name: "address", type: .address),
+                .init(name: "value", type: .uint(bits: 256))
+            ],
+            outputs: [],
+            constant: false,
+            payable: false
+        )
+    }
+    
     static func getTransferFunction() -> ABI.Element.Function{
         return ABI.Element.Function(
             name: "transfer",

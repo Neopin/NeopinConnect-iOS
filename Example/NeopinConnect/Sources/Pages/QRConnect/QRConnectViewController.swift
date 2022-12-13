@@ -2,7 +2,7 @@
 //  QRConnectViewController.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/08.
+//  Created by Neopin on 2022/08/08.
 //
 
 import UIKit
@@ -111,7 +111,7 @@ private extension QRConnectViewController {
             return nil
         }
         
-        return "examplewallet" + connectionURL
+        return "npt" + connectionURL
     }
 }
 
@@ -121,7 +121,7 @@ private extension QRConnectViewController {
         self.refreshConnectURL()
         
         guard let qrCodeURL = self.qrCodeURL,
-            let url = URL(string: qrCodeURL) else { return }
+              let url = URL(string: qrCodeURL) else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
@@ -131,7 +131,7 @@ private extension QRConnectViewController {
             
             let alertController = UIAlertController(
                 title: nil,
-                message: "복사되었습니다.",
+                message: "Copied",
                 preferredStyle: .alert
             )
             

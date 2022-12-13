@@ -2,7 +2,7 @@
 //  ConnectManager+Connect.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/03.
+//  Created by Neopin on 2022/08/03.
 //
 import NeopinConnect
 
@@ -30,13 +30,6 @@ extension ConnectManager {
             )
         }
         do {
-            /*
-             * name: 네오핀 지갑에서 보여질 이름입니다.
-             * description: name과 함께 보여질 설명입니다 (Optional)
-             * icons: 네오핀 지갑에서 보여질 아이콘주소입니다.
-             * url: 이름과 함께 표시될 URL입니다.
-             */
-            
             let connectLog = """
             function: \(#function)
             peerID: \(UUID().uuidString),

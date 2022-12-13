@@ -2,11 +2,12 @@
 //  ConnectManager+Send.swift
 //  neopin-connect-iOS-DApp
 //
-//  Created by Sung9 on 2022/08/03.
+//  Created by Neopin on 2022/08/03.
 //
 
 import NeopinConnect
 import web3swift
+import BigInt
 
 extension ConnectManager {
     // MARK: - getMyAccount
@@ -21,11 +22,68 @@ extension ConnectManager {
         self.appendLog(log: log)
     }
     
+    
+    func requestPersonalSign() {
+        guard let session = self.session,
+              let from = session.walletInfo?.accounts.first else { return }
+        guard let url = ConnectManager.shared.session?.url else { return }
+        
+        do {
+            try ConnectManager.shared.client?.personal_sign(
+                url: url,
+                message: "Test",
+                account: from,
+                completion: { [weak self] response in
+                    guard let self = self else { return }
+                    do {
+                        if let error = response.error {
+                            let log = """
+                            function: \(#function)
+                            error: \(error)
+                            """
+                            self.appendLog(log: log)
+                            return
+                        }
+                        
+                        let result = try response.result(as: String.self)
+                        print("requestSendTransaction: \(result)")
+
+                        ABIHelper.decodedABIInfo(data: result)
+                        let log = """
+                        function: \(#function)
+                        result: \(result)
+                        """
+                        self.appendLog(log: log)
+                    } catch {
+                        print("\(#function) error: \(error)")
+                        let log = """
+                        function: \(#function)
+                        response.result error: \(response.error?.localizedDescription ?? "")
+                        """
+                        self.appendLog(log: log)
+                    }
+                }
+            )
+        } catch {
+            print("\(#function) error: \(error)")
+            let log = """
+            function: \(#function)
+            response.result error: \(error.localizedDescription )
+            """
+            self.appendLog(log: log)
+        }
+
+    }
+    
     // MARK: - requestSendTransaction
     func requestSendTransaction(){
         guard let session = self.session,
               let from = session.walletInfo?.accounts.first else { return }
 
+//        guard let transaction = Stub.increaseAllowanceTransaction(
+//            to: "0xb093add5a8ad3e997ccbde6d12dfb2e0c2befbb7",
+//            from: from
+//        ) else { return }
         guard let transaction = Stub.transaction(
             from: from,
             to: "0xb093add5a8ad3e997ccbde6d12dfb2e0c2befbb7"
@@ -100,10 +158,10 @@ fileprivate enum Stub {
             gas: "0x76c0",
             gasPrice: "0x",
             value: "0x",
-            nonce: "0x", //Neopin Wallet에서 최신 nonce로 업데이트 합니다.
+            nonce: nil, // If sent as nil, Update to the latest nonce from the NEOPIN Wallet.
             type: nil,
             accessList: nil,
-            chainId: nil,
+            chainId: nil, 
             maxPriorityFeePerGas: nil,
             maxFeePerGas: nil
         )

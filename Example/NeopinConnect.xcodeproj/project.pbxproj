@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4601BD52290A194900C322E1 /* ConnectManager+Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601BD51290A194900C322E1 /* ConnectManager+Node.swift */; };
 		461F7A1C28D049F300F767FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79F528D049F300F767FF /* AppDelegate.swift */; };
 		461F7A1D28D049F300F767FF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79F728D049F300F767FF /* UIView.swift */; };
 		461F7A1E28D049F300F767FF /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F79F828D049F300F767FF /* Decimal.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		05A9D8C37B80AC3A3C81668D /* NeopinConnect.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NeopinConnect.podspec; path = ../NeopinConnect.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4601BD51290A194900C322E1 /* ConnectManager+Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConnectManager+Node.swift"; sourceTree = "<group>"; };
 		461F79F528D049F300F767FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		461F79F728D049F300F767FF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		461F79F828D049F300F767FF /* Decimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				461F7A1328D049F300F767FF /* ConnectManager+Log.swift */,
 				461F7A1428D049F300F767FF /* ConnectManager+Send.swift */,
 				461F7A1228D049F300F767FF /* ConnectManager+Session.swift */,
+				4601BD51290A194900C322E1 /* ConnectManager+Node.swift */,
 			);
 			path = ConnectManager;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				461F7A1F28D049F300F767FF /* Notification.swift in Sources */,
 				461F7A3128D049F300F767FF /* ConnectManager+Send.swift in Sources */,
 				461F7A2B28D049F300F767FF /* BaseButton.swift in Sources */,
+				4601BD52290A194900C322E1 /* ConnectManager+Node.swift in Sources */,
 				461F7A2328D049F300F767FF /* UITextView.swift in Sources */,
 				461F7A2728D049F300F767FF /* MainViewController.swift in Sources */,
 				461F7A2828D049F300F767FF /* ConnectButtonView.swift in Sources */,

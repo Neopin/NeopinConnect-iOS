@@ -10,7 +10,7 @@ import NeopinConnect
 final class ConnectManager: NSObject {
     // MARK: - Static Properties
     static let shared = ConnectManager()
-    static let bridgeServerURL: String = "https://bridge.walletconnect.org"
+    static let bridgeServerURL: String = "https://wc-bridge.neopin.io"
     
     // MARK: - Public Properties
     var log: String = "Click the Connect button to connect with Neopin Wallet.\n\n"
@@ -27,7 +27,7 @@ final class ConnectManager: NSObject {
      */
     let clientMetaData = NeopinConnect.Session.ClientMeta(
         name: "NEOPIN DApp(Sample)",
-        description: "NEOPIN DApp(Sample) description ",
+        description: nil,
         icons: [URL(string: "https://picsum.photos/300/300")!],
         url: URL(string: "https://neopin.sample.io")!,
         appId: "com.neopin.connect.sample.dapp",

@@ -44,6 +44,19 @@ private extension ABIHelper {
 
 // MARK: - Function
 extension ABIHelper {
+    static func increaseAllowanceFunction() -> ABI.Element.Function {
+        return ABI.Element.Function(
+            name: "increaseAllowance",
+            inputs: [
+                .init(name: "address", type: .address),
+                .init(name: "value", type: .uint(bits: 256))
+            ],
+            outputs: [],
+            constant: false,
+            payable: false
+        )
+    }
+    
     static func getTransferFunction() -> ABI.Element.Function{
         return ABI.Element.Function(
             name: "transfer",

@@ -24,6 +24,7 @@ final class MainViewController: BaseViewController {
         stackView.addArrangedSubview(self.disconnectButton)
         stackView.addArrangedSubview(self.getAccountButton)
         stackView.addArrangedSubview(self.sendTransactionButton)
+        stackView.addArrangedSubview(self.personalSignButton)
         stackView.addArrangedSubview(self.bottomInsetView)
         return stackView
     }()
@@ -65,7 +66,16 @@ final class MainViewController: BaseViewController {
             info: (title: "Send Transaction", fontColor: .white),
             backgroundColor: Color.neopinMain
         )
-        baseButton.addTarget(self, action: #selector(self.sendAction), for: .touchUpInside)
+        baseButton.addTarget(self, action: #selector(self.requestSendTransaction), for: .touchUpInside)
+        return baseButton
+    }()
+    
+    lazy var personalSignButton: BaseButton = {
+        let baseButton =  BaseButton(
+            info: (title: "PersonalSign", fontColor: .white),
+            backgroundColor: Color.neopinMain
+        )
+        baseButton.addTarget(self, action: #selector(self.requestPersonalSign), for: .touchUpInside)
         return baseButton
     }()
     
@@ -130,6 +140,11 @@ final class MainViewController: BaseViewController {
         }
         
         self.sendTransactionButton.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(20)
+            make.height.equalTo(52)
+        }
+        
+        self.personalSignButton.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(52)
         }
@@ -204,9 +219,23 @@ private extension MainViewController {
         self.showQRConnectViewController()
     }
     
-    @objc func sendAction() {
-        print("sendAction")
+    @objc func requestSendTransaction() {
+        print("requestSendTransaction")
         ConnectManager.shared.requestSendTransaction()
+//        ConnectManager.shared.requestPersonalSign()
+        guard (ConnectManager.shared.session?.walletInfo?.approved ?? false),
+              let sessionWCURL = ConnectManager.shared.session?.url,
+              let url = URL(string: "examplewallet" + sessionWCURL.absoluteString) else {
+            self.shownNeedToConnectAlert()
+            return
+        }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    @objc func requestPersonalSign() {
+        print("requestPersonalSign")
+        ConnectManager.shared.requestPersonalSign()
         guard (ConnectManager.shared.session?.walletInfo?.approved ?? false),
               let sessionWCURL = ConnectManager.shared.session?.url,
               let url = URL(string: "examplewallet" + sessionWCURL.absoluteString) else {

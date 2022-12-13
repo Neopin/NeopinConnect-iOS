@@ -111,7 +111,7 @@ private extension QRConnectViewController {
             return nil
         }
         
-        return "examplewallet" + connectionURL
+        return "npt" + connectionURL
     }
 }
 
@@ -121,7 +121,7 @@ private extension QRConnectViewController {
         self.refreshConnectURL()
         
         guard let qrCodeURL = self.qrCodeURL,
-            let url = URL(string: qrCodeURL) else { return }
+              let url = URL(string: qrCodeURL) else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     

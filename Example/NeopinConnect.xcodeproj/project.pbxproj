@@ -20,7 +20,6 @@
 		461F7A2528D049F300F767FF /* QRConnectViewController+NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0128D049F300F767FF /* QRConnectViewController+NotificationCenter.swift */; };
 		461F7A2628D049F300F767FF /* MainViewController+NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0328D049F300F767FF /* MainViewController+NotificationCenter.swift */; };
 		461F7A2728D049F300F767FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0428D049F300F767FF /* MainViewController.swift */; };
-		461F7A2828D049F300F767FF /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0628D049F300F767FF /* ConnectButtonView.swift */; };
 		461F7A2928D049F300F767FF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0828D049F300F767FF /* BaseViewController.swift */; };
 		461F7A2A28D049F300F767FF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0928D049F300F767FF /* BaseView.swift */; };
 		461F7A2B28D049F300F767FF /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A0A28D049F300F767FF /* BaseButton.swift */; };
@@ -34,6 +33,8 @@
 		461F7A3328D049F300F767FF /* ConnectManager+Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F7A1628D049F300F767FF /* ConnectManager+Connect.swift */; };
 		461F7A3428D049F300F767FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461F7A1828D049F300F767FF /* Assets.xcassets */; };
 		461F7A3528D049F300F767FF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461F7A1928D049F300F767FF /* Launch Screen.storyboard */; };
+		46701EE82974EDA8007D071E /* MultipleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46701EE72974EDA8007D071E /* MultipleButtonView.swift */; };
+		46701EEB29750B8D007D071E /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46701EEA29750B8D007D071E /* Chain.swift */; };
 		61F5250D7D52FB89A68D402C /* Pods_NeopinConnect_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15311AF1F0A3335E0E2CC0 /* Pods_NeopinConnect_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,6 @@
 		461F7A0128D049F300F767FF /* QRConnectViewController+NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QRConnectViewController+NotificationCenter.swift"; sourceTree = "<group>"; };
 		461F7A0328D049F300F767FF /* MainViewController+NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+NotificationCenter.swift"; sourceTree = "<group>"; };
 		461F7A0428D049F300F767FF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		461F7A0628D049F300F767FF /* ConnectButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectButtonView.swift; sourceTree = "<group>"; };
 		461F7A0828D049F300F767FF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		461F7A0928D049F300F767FF /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		461F7A0A28D049F300F767FF /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
@@ -67,6 +67,8 @@
 		461F7A1828D049F300F767FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		461F7A1928D049F300F767FF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		461F7A1B28D049F300F767FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46701EE72974EDA8007D071E /* MultipleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleButtonView.swift; sourceTree = "<group>"; };
+		46701EEA29750B8D007D071E /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NeopinConnect_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeopinConnect_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87406C178D0B003C73D4549A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9EE054A8E0500F71B35E13D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -95,8 +97,9 @@
 			children = (
 				461F79F428D049F300F767FF /* App */,
 				461F79F628D049F300F767FF /* Extensions */,
-				461F79FE28D049F300F767FF /* Pages */,
 				461F7A0B28D049F300F767FF /* Helper */,
+				46701EE929750B7A007D071E /* Model */,
+				461F79FE28D049F300F767FF /* Pages */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -145,8 +148,8 @@
 		461F7A0228D049F300F767FF /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				461F7A0328D049F300F767FF /* MainViewController+NotificationCenter.swift */,
 				461F7A0428D049F300F767FF /* MainViewController.swift */,
+				461F7A0328D049F300F767FF /* MainViewController+NotificationCenter.swift */,
 				461F7A0528D049F300F767FF /* View */,
 			);
 			path = Main;
@@ -155,7 +158,7 @@
 		461F7A0528D049F300F767FF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				461F7A0628D049F300F767FF /* ConnectButtonView.swift */,
+				46701EE72974EDA8007D071E /* MultipleButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +228,14 @@
 				461F7A1B28D049F300F767FF /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46701EE929750B7A007D071E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46701EEA29750B8D007D071E /* Chain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -427,15 +438,16 @@
 				4601BD52290A194900C322E1 /* ConnectManager+Node.swift in Sources */,
 				461F7A2328D049F300F767FF /* UITextView.swift in Sources */,
 				461F7A2728D049F300F767FF /* MainViewController.swift in Sources */,
-				461F7A2828D049F300F767FF /* ConnectButtonView.swift in Sources */,
 				461F7A2D28D049F300F767FF /* QRHelper.swift in Sources */,
 				461F7A2928D049F300F767FF /* BaseViewController.swift in Sources */,
 				461F7A2428D049F300F767FF /* QRConnectViewController.swift in Sources */,
+				46701EEB29750B8D007D071E /* Chain.swift in Sources */,
 				461F7A1E28D049F300F767FF /* Decimal.swift in Sources */,
 				461F7A2C28D049F300F767FF /* ABIHelper.swift in Sources */,
 				461F7A3228D049F300F767FF /* ConnectManager.swift in Sources */,
 				461F7A2F28D049F300F767FF /* ConnectManager+Session.swift in Sources */,
 				461F7A2228D049F300F767FF /* UIImageView.swift in Sources */,
+				46701EE82974EDA8007D071E /* MultipleButtonView.swift in Sources */,
 				461F7A2028D049F300F767FF /* String.swift in Sources */,
 				461F7A1D28D049F300F767FF /* UIView.swift in Sources */,
 				461F7A1C28D049F300F767FF /* AppDelegate.swift in Sources */,

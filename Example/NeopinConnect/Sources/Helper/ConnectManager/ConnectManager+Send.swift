@@ -76,17 +76,14 @@ extension ConnectManager {
     }
     
     // MARK: - requestSendTransaction
-    func requestSendTransaction(){
+    func requestSendTransaction(chain: Chain){
         guard let session = self.session,
               let from = session.walletInfo?.accounts.first else { return }
 
-//        guard let transaction = Stub.increaseAllowanceTransaction(
-//            to: "0xb093add5a8ad3e997ccbde6d12dfb2e0c2befbb7",
-//            from: from
-//        ) else { return }
         guard let transaction = Stub.transaction(
             from: from,
-            to: "0xb093add5a8ad3e997ccbde6d12dfb2e0c2befbb7"
+            to: "0xb093add5a8ad3e997ccbde6d12dfb2e0c2befbb7",
+            chain: chain
         ) else { return }
         
         do {
@@ -139,7 +136,8 @@ extension ConnectManager {
 fileprivate enum Stub {
     static func transaction(
         from address: String,
-        to: String
+        to: String,
+        chain: Chain
     ) -> Client.Transaction? {
         // MARK: - transferFucntion(address, value)
         guard let amount = Web3.Utils.parseToBigUInt("10000", units: .eth) else { return nil }
@@ -161,7 +159,7 @@ fileprivate enum Stub {
             nonce: nil, // If sent as nil, Update to the latest nonce from the NEOPIN Wallet.
             type: nil,
             accessList: nil,
-            chainId: nil, 
+            chainId: "\(chain.getChainID())",
             maxPriorityFeePerGas: nil,
             maxFeePerGas: nil
         )

@@ -22,9 +22,9 @@ final class MainViewController: BaseViewController {
         stackView.addArrangedSubview(self.topInsetView)
         stackView.addArrangedSubview(self.connectButtonView)
         stackView.addArrangedSubview(self.disconnectButton)
-        stackView.addArrangedSubview(self.getAccountButton)
-        stackView.addArrangedSubview(self.sendTransactionButton)
-        stackView.addArrangedSubview(self.personalSignButton)
+        stackView.addArrangedSubview(self.userButtonView)
+        stackView.addArrangedSubview(self.klaytnSendTransactionButton)
+        stackView.addArrangedSubview(self.polygonSendTransactionButton)
         stackView.addArrangedSubview(self.bottomInsetView)
         return stackView
     }()
@@ -35,10 +35,15 @@ final class MainViewController: BaseViewController {
         return view
     } ()
     
-    lazy var connectButtonView: ConnectButtonView = {
-       let connectButtonView = ConnectButtonView()
-        connectButtonView.defaultConnectButton.addTarget(self, action: #selector(self.connectAction), for: .touchUpInside)
-        connectButtonView.qrConnectButton.addTarget(self, action: #selector(self.qrConnectAction), for: .touchUpInside)
+    lazy var connectButtonView: MultipleButtonView = {
+        let connectButtonView = MultipleButtonView(titles: ["Connect", "QR Connect"])
+        if let connectButton = connectButtonView.buttonStackView.arrangedSubviews.first as? BaseButton {
+            connectButton.addTarget(self, action: #selector(self.connectAction), for: .touchUpInside)
+        }
+        
+        if let qrConnectButton = connectButtonView.buttonStackView.arrangedSubviews.last as? BaseButton {
+            qrConnectButton.addTarget(self, action: #selector(self.qrConnectAction), for: .touchUpInside)
+        }
         return connectButtonView
     }()
     
@@ -51,31 +56,34 @@ final class MainViewController: BaseViewController {
         return baseButton
     }()
     
-    lazy var getAccountButton: BaseButton = {
-        let baseButton = BaseButton(
-            info: (title: "Get Account", fontColor: .white),
-            backgroundColor: Color.neopinMain
-        )
-        baseButton.addTarget(self, action: #selector(self.getAccountAction), for: .touchUpInside)
-        return baseButton
+    lazy var userButtonView: MultipleButtonView = {
+        let userButtonView = MultipleButtonView(titles: ["Get Account", "PersonalSign"])
+        if let getAccountButton = userButtonView.buttonStackView.arrangedSubviews.first as? BaseButton {
+            getAccountButton.addTarget(self, action: #selector(self.getAccountAction), for: .touchUpInside)
+        }
+        
+        if let personalSigntButton = userButtonView.buttonStackView.arrangedSubviews.last as? BaseButton {
+            personalSigntButton.addTarget(self, action: #selector(self.requestPersonalSign), for: .touchUpInside)
+        }
+        return userButtonView
     }()
     
     
-    lazy var sendTransactionButton: BaseButton = {
+    lazy var klaytnSendTransactionButton: BaseButton = {
         let baseButton =  BaseButton(
-            info: (title: "Send Transaction", fontColor: .white),
+            info: (title: "Klaytn Send Transaction", fontColor: .white),
             backgroundColor: Color.neopinMain
         )
-        baseButton.addTarget(self, action: #selector(self.requestSendTransaction), for: .touchUpInside)
+        baseButton.addTarget(self, action: #selector(self.requestKlaytnSendTransaction), for: .touchUpInside)
         return baseButton
     }()
     
-    lazy var personalSignButton: BaseButton = {
+    lazy var polygonSendTransactionButton: BaseButton = {
         let baseButton =  BaseButton(
-            info: (title: "PersonalSign", fontColor: .white),
+            info: (title: "Polygon Send Transaction", fontColor: .white),
             backgroundColor: Color.neopinMain
         )
-        baseButton.addTarget(self, action: #selector(self.requestPersonalSign), for: .touchUpInside)
+        baseButton.addTarget(self, action: #selector(self.requestPolygonSendTransaction), for: .touchUpInside)
         return baseButton
     }()
     
@@ -134,17 +142,17 @@ final class MainViewController: BaseViewController {
             make.height.equalTo(52)
         }
         
-        self.getAccountButton.snp.makeConstraints { make in
+        self.userButtonView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(52)
         }
         
-        self.sendTransactionButton.snp.makeConstraints { make in
+        self.klaytnSendTransactionButton.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(52)
         }
         
-        self.personalSignButton.snp.makeConstraints { make in
+        self.polygonSendTransactionButton.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(52)
         }
@@ -155,7 +163,6 @@ final class MainViewController: BaseViewController {
         
         self.logTextView.snp.makeConstraints { make in
             make.top.equalTo(self.infoStackView.snp.bottom).offset(20).priority(.low)
-//            make.height.equalTo(50)
             make.leading.trailing.equalToSuperview().inset(20)
             make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).inset(20)
         }
@@ -210,7 +217,7 @@ private extension MainViewController {
             return
         }
         
-        let deepLinkURL = "examplewallet\(connectionURL)"
+        let deepLinkURL = "npt\(connectionURL)"
         guard let url = URL(string: deepLinkURL) else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
@@ -219,13 +226,25 @@ private extension MainViewController {
         self.showQRConnectViewController()
     }
     
-    @objc func requestSendTransaction() {
+    @objc func requestKlaytnSendTransaction() {
         print("requestSendTransaction")
-        ConnectManager.shared.requestSendTransaction()
-//        ConnectManager.shared.requestPersonalSign()
+        ConnectManager.shared.requestSendTransaction(chain: .klay)
         guard (ConnectManager.shared.session?.walletInfo?.approved ?? false),
               let sessionWCURL = ConnectManager.shared.session?.url,
-              let url = URL(string: "examplewallet" + sessionWCURL.absoluteString) else {
+              let url = URL(string: "npt" + sessionWCURL.absoluteString) else {
+            self.shownNeedToConnectAlert()
+            return
+        }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    @objc func requestPolygonSendTransaction() {
+        print("requestSendTransaction")
+        ConnectManager.shared.requestSendTransaction(chain: .polygon)
+        guard (ConnectManager.shared.session?.walletInfo?.approved ?? false),
+              let sessionWCURL = ConnectManager.shared.session?.url,
+              let url = URL(string: "npt" + sessionWCURL.absoluteString) else {
             self.shownNeedToConnectAlert()
             return
         }
@@ -238,7 +257,7 @@ private extension MainViewController {
         ConnectManager.shared.requestPersonalSign()
         guard (ConnectManager.shared.session?.walletInfo?.approved ?? false),
               let sessionWCURL = ConnectManager.shared.session?.url,
-              let url = URL(string: "examplewallet" + sessionWCURL.absoluteString) else {
+              let url = URL(string: "npt" + sessionWCURL.absoluteString) else {
             self.shownNeedToConnectAlert()
             return
         }

@@ -22,14 +22,14 @@ extension ConnectManager {
         self.appendLog(log: log)
     }
     
-    
+    // MARK: - requestPersonalSign
     func requestPersonalSign() {
         guard let session = self.session,
               let from = session.walletInfo?.accounts.first else { return }
         guard let url = ConnectManager.shared.session?.url else { return }
         
         do {
-            try ConnectManager.shared.client?.personal_sign(
+            try self.client?.personal_sign(
                 url: url,
                 message: "Test",
                 account: from,
@@ -72,11 +72,65 @@ extension ConnectManager {
             """
             self.appendLog(log: log)
         }
+    }
+    
+    // MARK: - requestSignTransaction
+    func requestSignTransaction(chain: Chain) {
+        guard let session = self.session,
+              let from = session.walletInfo?.accounts.first else { return }
+        
+        guard let transaction = Stub.transaction(
+            from: from,
+            to: "0xb093add5a8ad3e997ccbde6d12dfb2e0c2befbb7",
+            chain: chain
+        ) else { return }
+        
+        do {
+            try self.client?.eth_signTransaction(
+                url: session.url,
+                transaction: transaction,
+                completion: { [weak self] response in
+                    guard let self = self else { return }
+                    do {
+                        if let error = response.error {
+                            let log = """
+                            function: \(#function)
+                            error: \(error)
+                            """
+                            self.appendLog(log: log)
+                            return
+                        }
+                        
+                        let result = try response.result(as: String.self)
+                        print("requestSignTransaction: \(result)")
 
+                        ABIHelper.decodedABIInfo(data: result)
+                        let log = """
+                        function: \(#function)
+                        result: \(result)
+                        """
+                        self.appendLog(log: log)
+                    } catch {
+                        print("\(#function) error: \(error)")
+                        let log = """
+                        function: \(#function)
+                        response.result error: \(response.error?.localizedDescription ?? "")
+                        """
+                        self.appendLog(log: log)
+                    }
+                }
+            )
+        } catch {
+            let log = """
+            function: \(#function)
+            eth_signTransaction error: \(error)
+            """
+            self.appendLog(log: log)
+        }
     }
     
     // MARK: - requestSendTransaction
-    func requestSendTransaction(chain: Chain){
+    func requestSendTransaction(chain: Chain) {
         guard let session = self.session,
               let from = session.walletInfo?.accounts.first else { return }
 
